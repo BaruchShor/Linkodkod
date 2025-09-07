@@ -3,6 +3,7 @@
   border-radius: 1rem;
   margin: 0.3rem;
   padding: 0.6rem;
+  border: solid rgba(159, 154, 149, 0.356);
 }
 
 #postHeader {
