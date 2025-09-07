@@ -1,0 +1,19 @@
+#post {
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0.3rem;
+  padding: 0.6rem;
+}
+
+#postHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+#profileImg {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+}

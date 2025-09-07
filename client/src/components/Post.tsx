@@ -1,21 +1,29 @@
+import IPost from "../interfaces/IPost";
 import "../style/Post.css";
 
-export default function Post() {
+export default function Post({
+  profile,
+  postText,
+  creationTime,
+  likes,
+}: IPost) {
   return (
     <>
       <article id="post">
         <section id="postHeader">
-          <img src="" alt="writerImg" />
-          <div id="Advertiser name"></div>
-          <div id="advertiserDescription"></div>
-          <div id="publicationTime"></div>
+          <img id="profileImg" src={profile.img} alt="writerImg" />
+          <section id="profileDetails">
+            <div id="AdvertiserName">{profile.name}</div>
+            <div id="advertiserDescription">{profile.description}</div>
+            <div id="publicationTime">{creationTime}</div>
+          </section>
         </section>
         <section id="postBody">
-          <p></p>
+          <p id="postText">{postText}</p>
           <div id="postImages"></div>
         </section>
         <section id="postFoter">
-          <div id="likes"></div>
+          <div id="likes">{likes}</div>
         </section>
       </article>
     </>
