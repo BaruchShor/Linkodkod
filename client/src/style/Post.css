@@ -17,3 +17,30 @@
   width: 4.5rem;
   border-radius: 50%;
 }
+
+#AdvertiserName {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#advertiserDescription {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#publicationTime {
+  font-size: small;
+  font-family: Courier New;
+}
+
+#postText {
+  font-family: Times New Roman;
+}
+
+#postFoter {
+  display: flex;
+  flex-direction: row;
+}
+
+#likeLogo {
+  width: 2rem;
+  height: 2rem;
+}
