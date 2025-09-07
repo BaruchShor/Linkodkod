@@ -1,5 +1,5 @@
-import "../style/Header.css";
-import imageLogo from "../LinkodkodLogos/LinkodkodLogo.png";
+import "../../style/Header.css";
+import imageLogo from "../../LinkodkodLogos/LinkodkodLogo.png";
 
 export default function Header() {
   return (
