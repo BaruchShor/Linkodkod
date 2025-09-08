@@ -1,7 +1,8 @@
 import fs from "node:fs/promises";
 
 export async function readAllFromFile(path) {
-  return await fs.readFile(process.cwd + path, "utf-8");
+  const data = await fs.readFile(process.cwd + path, "utf-8");
+  return JSON.parse(data);
 }
 
 export async function writeToFile(path, data) {

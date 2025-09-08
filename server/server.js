@@ -1,9 +1,17 @@
 import express from "express";
+import cors from "cors";
+
 import postsRouter from "./src/routes/postRouter.js";
 
 const PORT = 3500;
 
 const server = express();
+server.use(
+  cors({
+    origin: ["http://localhost:5173"],
+    credentials: true,
+  })
+);
 server.use(express.json());
 server.use(express.static("public"));
 server.use("/posts", postsRouter);
