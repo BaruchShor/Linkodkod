@@ -7,7 +7,8 @@
     },
     "postText": "Hi, I'm a full stack programmer, and I really enjoy what I do. It's not always as simple as it's made out to be, and sometimes it's even more challenging than many other jobs on the market, but what drives me is the satisfaction, the curiosity, the joy of creation, and that's why I'm here, writing to my fellow top-notchers who are also coming to fulfill their dreams and of course bring security to the country.",
     "creationTime": "07/09/2025",
-    "likes": 12
+    "likes": 12,
+    "postImg": "http://localhost:3500/postsImages/yaakovPostImg.png"
   },
   {
     "profile": {
@@ -17,7 +18,8 @@
     },
     "postText": "Hi, I'm a full stack programmer, and I really enjoy what I do. It's not always as simple as it's made out to be, and sometimes it's even more challenging than many other jobs on the market, but what drives me is the satisfaction, the curiosity, the joy of creation, and that's why I'm here, writing to my fellow top-notchers who are also coming to fulfill their dreams and of course bring security to the country.",
     "creationTime": "07/09/2025",
-    "likes": 2
+    "likes": 2,
+    "postImg": "http://localhost:3500/postsImages/moshesPostImg.png"
   },
   {
     "profile": {
@@ -27,7 +29,8 @@
     },
     "postText": "Hi, I'm a full stack programmer, and I really enjoy what I do. It's not always as simple as it's made out to be, and sometimes it's even more challenging than many other jobs on the market, but what drives me is the satisfaction, the curiosity, the joy of creation, and that's why I'm here, writing to my fellow top-notchers who are also coming to fulfill their dreams and of course bring security to the country.",
     "creationTime": "07/09/2025",
-    "likes": 3
+    "likes": 3,
+    "postImg": "http://localhost:3500/postsImages/eliausPostImg.png"
   },
   {
     "profile": {
@@ -37,7 +40,8 @@
     },
     "postText": "Hi, I'm a full stack programmer, and I really enjoy what I do. It's not always as simple as it's made out to be, and sometimes it's even more challenging than many other jobs on the market, but what drives me is the satisfaction, the curiosity, the joy of creation, and that's why I'm here, writing to my fellow top-notchers who are also coming to fulfill their dreams and of course bring security to the country.",
     "creationTime": "07/09/2025",
-    "likes": 6
+    "likes": 6,
+    "postImg": "http://localhost:3500/postsImages/menachemsPostImg.png"
   },
   {
     "profile": {
@@ -47,7 +51,8 @@
     },
     "postText": "Hi, I'm a full stack programmer, and I really enjoy what I do. It's not always as simple as it's made out to be, and sometimes it's even more challenging than many other jobs on the market, but what drives me is the satisfaction, the curiosity, the joy of creation, and that's why I'm here, writing to my fellow top-notchers who are also coming to fulfill their dreams and of course bring security to the country.",
     "creationTime": "07/09/2025",
-    "likes": 10
+    "likes": 10,
+    "postImg": "http://localhost:3500/postsImages/asafsPostImg.png"
   },
   {
     "profile": {
@@ -57,6 +62,7 @@
     },
     "postText": "Hi, I'm a full stack programmer, and I really enjoy what I do. It's not always as simple as it's made out to be, and sometimes it's even more challenging than many other jobs on the market, but what drives me is the satisfaction, the curiosity, the joy of creation, and that's why I'm here, writing to my fellow top-notchers who are also coming to fulfill their dreams and of course bring security to the country.",
     "creationTime": "07/09/2025",
-    "likes": 5
+    "likes": 5,
+    "postImg": "http://localhost:3500/postsImages/avisPostImg.png"
   }
 ]
