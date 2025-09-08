@@ -36,6 +36,11 @@
   font-family: Times New Roman;
 }
 
+#postImages {
+  width: 100%;
+  height: 18rem;
+}
+
 #postFoter {
   display: flex;
   flex-direction: row;
