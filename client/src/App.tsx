@@ -1,17 +1,17 @@
 import "./App.css";
-import Header from "./components/application-layout/Header";
-import Footer from "./components/application-layout/Footer";
-import { Outlet } from "react-router";
+import Layout from "./components/application-layout/Layout";
+import { Routes, Route, BrowserRouter } from "react-router";
+import PostPage from "./pages/PostPage";
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </>
+    <Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PostPage />} />
+        </Routes>
+      </BrowserRouter>
+    </Layout>
   );
 }
 

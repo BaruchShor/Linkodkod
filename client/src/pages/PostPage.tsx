@@ -1,6 +1,6 @@
 import "../style/PostPage.css";
 import posts from "../../../server/postsDB.json";
-import Post from "../components/application-layout/Post";
+import Post from "../components/Post";
 
 export default function PostPage() {
   return (

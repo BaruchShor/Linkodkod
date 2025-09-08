@@ -1,6 +1,6 @@
-import IPost from "../../interfaces/IPost";
-import "../../style/Post.css";
-import ligeLogo from "../../LinkodkodLogos/like.png";
+import IPost from "../interfaces/IPost";
+import "../style/Post.css";
+import likeLogo from "../LinkodkodLogos/like.png";
 
 export default function Post({
   profile,
@@ -25,7 +25,7 @@ export default function Post({
         </section>
         <section id="postFoter">
           <div id="likes">{likes}</div>
-          <img id="likeLogo" src={ligeLogo} alt="like logo" />
+          <img id="likeLogo" src={likeLogo} alt="like logo" />
         </section>
       </article>
     </>
