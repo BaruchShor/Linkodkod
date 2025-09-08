@@ -6,6 +6,7 @@ export default function Post({
   profile,
   postText,
   creationTime,
+  postImg,
   likes,
 }: IPost) {
   return (
@@ -21,7 +22,9 @@ export default function Post({
         </section>
         <section id="postBody">
           <p id="postText">{postText}</p>
-          <div id="postImages"></div>
+          <div>
+            <img  id="postImages" src={postImg} alt="post img" />
+          </div>
         </section>
         <section id="postFoter">
           <div id="likes">{likes}</div>

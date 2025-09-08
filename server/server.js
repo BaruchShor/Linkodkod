@@ -5,6 +5,7 @@ const PORT = 3500;
 
 const server = express();
 server.use(express.json());
+server.use(express.static("public"));
 server.use("/posts", postsRouter);
 
 server.listen(PORT, () => {
