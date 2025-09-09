@@ -1,5 +1,4 @@
 import "../style/PostPage.css";
-import posts from "../../../server/db/postsDB.json";
 import Post from "../components/Post";
 import { useEffect, useState } from "react";
 import IPost from "../interfaces/IPost";

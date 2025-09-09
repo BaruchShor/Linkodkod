@@ -1,0 +1,55 @@
+#loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 35rem;
+  background-color: rgba(158, 162, 162, 0.511);
+  margin: 3rem;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 50%;
+}
+
+.loginInput,
+.loginLable,
+#loginBtn {
+  width: 20rem;
+  color: rgb(42, 45, 79);
+  font-size: larger;
+  font-family: Courier New;
+}
+
+.loginLable {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.loginInput {
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#loginBtn {
+  height: 2.5rem;
+  background-color: rgb(42, 45, 79);
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+}
+
+#loginBtn:hover,
+.loginInput:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
