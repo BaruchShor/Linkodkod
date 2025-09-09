@@ -1,7 +1,4 @@
-import {
-  readFromPostsData,
-  writeToPostsData,
-} from "../services/postService.js";
+import { readFromPostsData, createNewPost } from "../services/postService.js";
 
 export const getAllPosts = async (req, res) => {
   try {
@@ -12,9 +9,9 @@ export const getAllPosts = async (req, res) => {
   }
 };
 
-export const postNewPost = async (req, res) => {
+export const createPost = async (req, res) => {
   try {
-    await writeToPostsData(req.body);
+    await createNewPost(req.body);
     res.status(201).send("Post adde successfuly");
   } catch (error) {
     res.status(500).send("Added post faild");

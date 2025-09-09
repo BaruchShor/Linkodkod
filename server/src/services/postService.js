@@ -1,8 +1,15 @@
-import { readAllFromFile, writeToFile } from "../DAL/CRUD.js";
+import {
+  readAllFromFile,
+  createNewObj,
+  updateObj,
+  deleteObj,
+} from "../DAL/CRUD.js";
+
+const PATH = "../../db/postsDB.json";
 
 export async function readFromPostsData() {
   try {
-    const data = await readAllFromFile("../../db/postsDB.json");
+    const data = await readAllFromFile(PATH);
     if (data) return JSON.stringify(data);
     return [];
   } catch (error) {
@@ -10,6 +17,8 @@ export async function readFromPostsData() {
   }
 }
 
-export async function writeToPostsData(data) {
-  return await writeToFile("../../db/postsDB.json", data);
+export async function createNewPost(data) {
+  try {
+    return await createNewObj(PATH, data);
+  } catch (error) {}
 }
