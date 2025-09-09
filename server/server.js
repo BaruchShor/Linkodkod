@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 
 import postsRouter from "./src/routes/postRouter.js";
+import profilesRouter from "./src/routes/profilesRouter.js";
 
 const PORT = 3500;
 
@@ -15,6 +16,7 @@ server.use(
 server.use(express.json());
 server.use(express.static("public"));
 server.use("/posts", postsRouter);
+server.use("/profiles", profilesRouter);
 
 server.listen(PORT, () => {
   console.log(`Listening at port ${PORT} !!!`);
