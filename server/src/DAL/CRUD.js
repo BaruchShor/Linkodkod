@@ -9,6 +9,26 @@ export async function readAllFromFile(path) {
   }
 }
 
+export async function getObjById(path, id) {
+  try {
+    const data = await readAllFromFile(path);
+    const res = data.find((obj) => obj.id === id);
+    return res;
+  } catch (error) {
+    return error.message;
+  }
+}
+
+export async function getObjByName(path, name) {
+  try {
+    const data = await readAllFromFile(path);
+    const res = data.find((obj) => obj.name === name);
+    return res;
+  } catch (error) {
+    return error.message;
+  }
+}
+
 export async function writeToFile(path, data) {
   try {
     await fs.writeFile(path, JSON.stringify(process.cwd + data), "utf-8");

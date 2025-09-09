@@ -1,6 +1,7 @@
 import {
   readFromProfilesData,
-  writeToProfilesData,
+  findProfileById,
+  createNewProfile,
 } from "../services/profilesService.js";
 
 export const getAllProfiles = async (req, res) => {
@@ -14,9 +15,9 @@ export const getAllProfiles = async (req, res) => {
 
 export const postNewProfile = async (req, res) => {
   try {
-    await writeToProfilesData(req.body);
-    res.status(201).send("Post adde successfuly");
+    await createNewProfile(req.body);
+    res.status(201).send("Profile adde successfuly");
   } catch (error) {
-    res.status(500).send("Added post faild");
+    res.status(500).send("Added profile faild");
   }
 };
