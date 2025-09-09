@@ -15,7 +15,6 @@ export default function PostPage() {
           method: "GET",
         });
         const result = await respons.json();
-        console.log(result);
         func(result);
       } catch (err) {}
     };
@@ -27,7 +26,7 @@ export default function PostPage() {
     <>
       <article id="postPage">
         {posts.map((post) => {
-          const user = profiles.filter((man) => man.password === post.authorId);
+          const user = profiles.filter((author) => author.id === post.authorId);
           return (
             <>
               <Post post={post} profile={user[0]} />

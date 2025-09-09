@@ -9,8 +9,8 @@ function App() {
     <Layout>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<LogIn />} />
-          <Route path="/" element={<PostPage />} />
+          <Route path="/" element={<LogIn />} />
+          <Route path="/postpage" element={<PostPage />} />
         </Routes>
       </BrowserRouter>
     </Layout>

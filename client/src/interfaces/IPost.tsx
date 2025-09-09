@@ -2,7 +2,7 @@ import IProfile from "./IProfile";
 
 export default interface IPost {
   id: number;
-  authorId: string;
+  authorId: number;
   postText: string;
   creationTime: string;
   postImg: string;
