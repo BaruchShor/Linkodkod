@@ -40,5 +40,12 @@
     "password": "123456",
     "description": "Fullstack programmer",
     "img": "http://localhost:3500/profileImages/profileImg.png"
+  },
+  {
+    "name": "Ershi",
+    "id": "123",
+    "password": "$2b$12$jj2pCHvmCmV7wghOc.yhaOSUp5BRR70OAhytUlKfmTdTT72bNhbMO",
+    "description": "Full Stack",
+    "img": "http://localhost:3500/profileImages/profileImg.png"
   }
 ]
