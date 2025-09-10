@@ -1,0 +1,47 @@
+#newPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 35rem;
+  margin: 3rem;
+  background-color: rgba(158, 162, 162, 0.511);
+}
+
+#newPostForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 60%;
+  height: 90%;
+}
+
+.newPostLable,
+.newPostInpot {
+  width: 100%;
+}
+
+#postText {
+  height: 60%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: larger;
+  font-family: Courier New;
+  border: none;
+  resize: none;
+}
+
+#sendBtn {
+  height: 2.5rem;
+  width: 100%;
+  font-size: larger;
+  font-family: Courier New;
+  background-color: rgb(42, 45, 79);
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+}
