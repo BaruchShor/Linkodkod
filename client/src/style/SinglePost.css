@@ -1,3 +1,41 @@
+#singlPostPage {
+  width: 60%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 3rem;
+  border: solid rgba(159, 154, 149, 0.356);
+  border-radius: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#backToPosts {
+  width: 90%;
+  height: 2rem;
+  background-color: rgb(42, 45, 79);
+  color: white;
+  border: none;
+  border-radius: 0.8rem;
+  font-family: Courier New;
+}
+
+#backToPosts:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#singlePost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
 #post {
   background-color: white;
   border-radius: 1rem;
