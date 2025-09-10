@@ -1,16 +1,14 @@
 export default function NewPost() {
   return (
-    <article>
-      <form action="">
-        <label htmlFor="">
-          <input type="text" />
-        </label>
+    <article id="newPost">
+      <form id="newPostForm">
+        <textarea></textarea>
 
         <label htmlFor="">
-          <input type="text" />
+          <input type="file" />
         </label>
 
-        <button type="submit"></button>
+        <button type="submit">Send</button>
       </form>
     </article>
   );
