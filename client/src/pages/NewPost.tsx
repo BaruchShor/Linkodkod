@@ -2,7 +2,7 @@ export default function NewPost() {
   return (
     <article id="newPost">
       <form id="newPostForm">
-        <textarea></textarea>
+        <textarea id="postText"></textarea>
 
         <label htmlFor="">
           <input type="file" />
