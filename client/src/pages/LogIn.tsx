@@ -11,7 +11,6 @@ export default function LogIn() {
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setError(null);
-
     try {
       const response = await fetch("http://localhost:3500/auth/login", {
         method: "POST",
@@ -24,7 +23,6 @@ export default function LogIn() {
         }),
         credentials: "include",
       });
-
       if (response.status === 200) {
         const data = await response.json();
 
@@ -45,6 +43,7 @@ export default function LogIn() {
   };
   return (
     <article id="loginPage">
+      <h1>Log in page</h1>
       <form id="loginForm" onSubmit={handleSubmit}>
         <label className="loginLable" htmlFor="username">
           User name

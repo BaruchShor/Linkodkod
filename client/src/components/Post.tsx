@@ -3,7 +3,7 @@ import likeLogo from "../LinkodkodLogos/like.png";
 
 export default function Post({
   post: { postText, creationTime, postImg, likes },
-  profile: { name, password, description, img },
+  profile: { name, description, img },
 }) {
   return (
     <>
