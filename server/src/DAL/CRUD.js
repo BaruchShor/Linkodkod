@@ -31,7 +31,7 @@ export async function getObjByName(path, name) {
 
 export async function writeToFile(path, data) {
   try {
-    await fs.writeFile(path, JSON.stringify(process.cwd + data), "utf-8");
+    await fs.writeFile(process.cwd + path, JSON.stringify(data), "utf-8");
     return "OK";
   } catch (error) {
     return error.message;
