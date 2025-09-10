@@ -60,7 +60,6 @@ export async function validate(req, res) {
       valid: true,
       user: {
         id: decoded.id,
-        role: decoded.role,
       },
     });
   } catch (err) {

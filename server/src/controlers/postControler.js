@@ -10,6 +10,7 @@ export const getAllPosts = async (req, res) => {
 };
 
 export const createPost = async (req, res) => {
+  console.log(req);
   try {
     await createNewPost(req.body);
     res.status(201).send("Post adde successfuly");
