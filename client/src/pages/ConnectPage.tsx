@@ -19,6 +19,7 @@ export default function LogInPage() {
         const data = await res.json();
 
         if (data.valid) {
+          localStorage.setItem("userId", data.user);
           navigate("/postpage");
         } else {
           localStorage.removeItem("token");
