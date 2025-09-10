@@ -1,8 +1,34 @@
 import { useNavigate } from "react-router";
 import "../style/ConnectPage.css";
+import { useEffect } from "react";
 
 export default function LogInPage() {
   const navigate = useNavigate();
+  useEffect(() => {
+    const checkToken = async () => {
+      const token = localStorage.getItem("token");
+      if (!token) return;
+      try {
+        const res = await fetch("http://localhost:3500/auth/validate", {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        const data = await res.json();
+
+        if (data.valid) {
+          navigate("/postpage");
+        } else {
+          localStorage.removeItem("token");
+        }
+      } catch {
+        localStorage.removeItem("token");
+      }
+    };
+    checkToken();
+  }, []);
   return (
     <>
       <article id="connectPage">
